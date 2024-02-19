@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 20px;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: #011505;
+    color: #ccc;
+}
+
+header form {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+header form input[type="search"],
+header form button[type="submit"] {
+    margin-left: 16px;
+}
+
+.submenu {
+    display: none;
+    border: 1px solid #499360;
+    background-color: #97BAA4;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top:100%;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.submenu li a {
+    color: #295651;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.menu li:hover .submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu li:hover {
+    border-color:#499360;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
+body {
+    background-color: #ccc;
+}
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%; 
+}
+
+h2.container {
+    color: #011505;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card img {
+    max-width: 100%; 
+}
+
+.card {
+    margin-bottom: 56px;
+}
+
+.card .card-body a {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .menu > li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu > li a {
+        font-size: 16px;
+    }
+
+    .submenu li a {
+        font-size: 14px;
+    }
+
+    .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .menu > li {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .col-4 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu > li {
+        width: calc(100% / 3);
+        margin-bottom: 10px;
+    }
+
+    .col-4 {
+        width: calc(100% / 3);
+        margin-bottom: 20px;
+    }
+}

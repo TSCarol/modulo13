@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekWave</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./EBACcodes/bootstrap avancado/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./maincss.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GeekWave</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button class="btn btn-light" type="submit"> Pesquisar </button>
+            </form>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Home
+
+                    <ul class="submenu">
+                        <li> 
+                            <a href="#">Noticias</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre nós</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="carousel-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/08/27/22/56/darth-vader-2687850_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Darth Vader</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/07/02/00/11/blood-rage-4311102_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Blood Rage</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/04/11/03/50/space-marine-7915662_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Space Marine</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="carousel-carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="carousel-carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="carousel-carousel" data-bs-slide-to="2"></button>          
+            </div>
+        </div>
+    </div>
+    <h2 class="container noticias"> Noticias </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        
+                    </header>
+                    <img src="./GettyImages-1496199364-1.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">APPLE</h4>
+                        <p class="card-text">
+                            Dias após publicar um vídeo em que faz uma análise crítica do Vision Pro, os novos óculos de realidade virtual da Apple, no qual alfineta o produto da concorrente, Mark Zuckerberg, fundador do Facebook e presidente da Meta,garante que óculos Vision Pro será o dispositivo móvel do futuro.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 19/02/2024 às 12:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        
+                    </header>
+                    <img src="./Com-multiverso-Quarteto-Fantastico-sera-um-dos-filmes-mais-importantes-da-Marvel-legadodamarvel.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">6 detalhes reveladores no pôster do novo Quarteto Fantástico</h4>
+                        <p class="card-text">
+                            Uma das grandes estreias de 2025 é o novo filme do Quarteto Fantástico, que chegará em breve aos cinemas. Os estúdios já confirmaram no elenco principal: os atores Pedro Pascal (The Last of Us), Vanessa Kirby (Napoleão), Joseph Quinn (Stranger Things) e Ebon Moss-Bachrach (The Bear).
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 19/02/2024 às 11:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        
+                    </header>
+                    <img src="./cbd020d5b5.webp"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Bonecos Funko Pop colecionáveis abaixo de R$ 100 e mais em oferta.</h4>
+                        <p class="card-text">
+                            Ter a imagem de um personagem querido como decoração é uma forma de eternizar uma trama que faz parte da nossa vida, e há várias edições que nos aproxima de cenas memoráveis.
+                        </p>
+                        <a href="#" class="btn btn-light">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time> 19/02/2024 às 09:00:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="./EBACcodes/bootstrap avancado/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
